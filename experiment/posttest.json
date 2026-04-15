@@ -2,37 +2,58 @@
   "version": 2.0,
   "questions": [
     {
-      "question": "This is a Sample Question 1?",
+      "question": "Increasing structuring element size in erosion:",
       "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
+        "a": "Less erosion",
+        "b": "More erosion",
+        "c": "No change",
+        "d": "Sharpening"
       },
-      "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
-      },
-      "correctAnswer": "a",
+      "correctAnswer": "b",
       "difficulty": "beginner"
     },
     {
-      "question": "This is a Sample Question 2?",
+      "question": "Dilation can connect:",
       "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
+        "a": "Disconnected components",
+        "b": "Histograms",
+        "c": "Edges only",
+        "d": "Random pixels"
       },
-      "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
+      "correctAnswer": "a",
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "Opening preserves:",
+      "answers": {
+        "a": "Large objects",
+        "b": "Tiny noise",
+        "c": "Blur",
+        "d": "Salt noise only"
       },
-      "correctAnswer": "c",
+      "correctAnswer": "a",
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "Closing is:",
+      "answers": {
+        "a": "Erosion then dilation",
+        "b": "Dilation then erosion",
+        "c": "Median then mean",
+        "d": "Laplacian then Sobel"
+      },
+      "correctAnswer": "b",
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "Morphological operations require:",
+      "answers": {
+        "a": "Kernel/structuring element",
+        "b": "Gamma",
+        "c": "PSF",
+        "d": "Template"
+      },
+      "correctAnswer": "a",
       "difficulty": "beginner"
     }
   ]

@@ -1,13 +1,88 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
 <head>
-	<!-- Add CSS at the head of HTML file -->
-    <link rel="stylesheet" href="./css/main.css">
+<meta charset="UTF-8">
+<title>Experiment 6: Image Morphology</title>
+<link rel="stylesheet" href="css/main.css" />
+  <script src="https://docs.opencv.org/4.x/opencv.js"></script>
+  <script src="js/main.js" defer></script>
 </head>
 <body>
-		<!-- Your code goes here-->
+<div class="app">
+<header class="topbar">
+<div>
+<h1>Experiment 6: Image Morphology</h1>
+<p>Erosion, Dilation, Opening & Closing</p>
+</div>
+<div class="status-pill">
+<span class="dot" id="statusDot"></span>
+<span id="statusText">Loading OpenCV...</span>
+</div>
+<button onclick="location.reload()">Reset</button>
+</header>
 
-	<!-- Add JS at the bottom of HTML file --> 
-        <script src="./js/main.js"></script>
+<main class="layout">
+
+<aside class="sidebar">
+
+<div class="card">
+<h3>Input Image</h3>
+<input type="file" id="imageInput">
+</div>
+
+<div class="card">
+<h3>Structuring Element</h3>
+
+<label>Kernel Size (odd)</label>
+<input type="range" id="kernelSize" min="1" max="25" step="2" value="3">
+<span id="kernelVal">3</span>
+
+<label>Shape</label>
+<select id="kernelShape">
+<option value="rect">Rectangle</option>
+<option value="ellipse">Ellipse</option>
+<option value="cross">Cross</option>
+</select>
+
+<label>Threshold (Binary)</label>
+<input type="range" id="threshold" min="0" max="255" value="127">
+<span id="threshVal">127</span>
+
+</div>
+
+</aside>
+
+<section class="workspace">
+<div class="canvas-row">
+
+<div class="canvas-card">
+<h4>Original (Binary)</h4>
+<canvas id="originalCanvas"></canvas>
+</div>
+
+<div class="canvas-card">
+<h4>Erosion</h4>
+<canvas id="erosionCanvas"></canvas>
+</div>
+
+<div class="canvas-card">
+<h4>Dilation</h4>
+<canvas id="dilationCanvas"></canvas>
+</div>
+
+<div class="canvas-card">
+<h4>Opening / Closing</h4>
+<select id="comboMode">
+<option value="open">Opening</option>
+<option value="close">Closing</option>
+</select>
+<canvas id="comboCanvas"></canvas>
+</div>
+
+</div>
+</section>
+
+</main>
+</div>
 </body>
 </html>

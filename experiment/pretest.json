@@ -2,37 +2,58 @@
   "version": 2.0,
   "questions": [
     {
-      "question": "This is a Sample Question 1?",
+      "question": "Erosion causes objects to:",
       "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
+        "a": "Expand",
+        "b": "Shrink",
+        "c": "Rotate",
+        "d": "Blur"
       },
-      "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "Dilation causes objects to:",
+      "answers": {
+        "a": "Expand",
+        "b": "Shrink",
+        "c": "Sharpen",
+        "d": "Threshold"
       },
       "correctAnswer": "a",
       "difficulty": "beginner"
     },
     {
-      "question": "This is a Sample Question 2?",
+      "question": "Opening removes:",
       "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
+        "a": "Holes",
+        "b": "Small noise objects",
+        "c": "Edges",
+        "d": "Contrast"
       },
-      "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
+      "correctAnswer": "b",
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "Closing is useful for:",
+      "answers": {
+        "a": "Removing salt noise",
+        "b": "Filling gaps/holes",
+        "c": "Gamma correction",
+        "d": "Template matching"
       },
-      "correctAnswer": "c",
+      "correctAnswer": "b",
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "Morphology works mainly on:",
+      "answers": {
+        "a": "RGB values",
+        "b": "Shape/structure",
+        "c": "Frequency response",
+        "d": "Histograms"
+      },
+      "correctAnswer": "b",
       "difficulty": "beginner"
     }
   ]
