@@ -1,0 +1,60 @@
+{
+  "version": 2.0,
+  "questions": [
+    {
+      "question": "Erosion causes objects to:",
+      "answers": {
+        "a": "Expand",
+        "b": "Shrink",
+        "c": "Rotate",
+        "d": "Blur"
+      },
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "Dilation causes objects to:",
+      "answers": {
+        "a": "Expand",
+        "b": "Shrink",
+        "c": "Sharpen",
+        "d": "Threshold"
+      },
+      "correctAnswer": "a",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "Opening removes:",
+      "answers": {
+        "a": "Holes",
+        "b": "Small noise objects",
+        "c": "Edges",
+        "d": "Contrast"
+      },
+      "correctAnswer": "b",
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "Closing is useful for:",
+      "answers": {
+        "a": "Removing salt noise",
+        "b": "Filling gaps/holes",
+        "c": "Gamma correction",
+        "d": "Template matching"
+      },
+      "correctAnswer": "b",
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "Morphology works mainly on:",
+      "answers": {
+        "a": "RGB values",
+        "b": "Shape/structure",
+        "c": "Frequency response",
+        "d": "Histograms"
+      },
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    }
+  ]
+}

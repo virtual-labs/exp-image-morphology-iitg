@@ -1,0 +1,60 @@
+{
+  "version": 2.0,
+  "questions": [
+    {
+      "question": "Increasing structuring element size in erosion:",
+      "answers": {
+        "a": "Less erosion",
+        "b": "More erosion",
+        "c": "No change",
+        "d": "Sharpening"
+      },
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "Dilation can connect:",
+      "answers": {
+        "a": "Disconnected components",
+        "b": "Histograms",
+        "c": "Edges only",
+        "d": "Random pixels"
+      },
+      "correctAnswer": "a",
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "Opening preserves:",
+      "answers": {
+        "a": "Large objects",
+        "b": "Tiny noise",
+        "c": "Blur",
+        "d": "Salt noise only"
+      },
+      "correctAnswer": "a",
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "Closing is:",
+      "answers": {
+        "a": "Erosion then dilation",
+        "b": "Dilation then erosion",
+        "c": "Median then mean",
+        "d": "Laplacian then Sobel"
+      },
+      "correctAnswer": "b",
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "Morphological operations require:",
+      "answers": {
+        "a": "Kernel/structuring element",
+        "b": "Gamma",
+        "c": "PSF",
+        "d": "Template"
+      },
+      "correctAnswer": "a",
+      "difficulty": "beginner"
+    }
+  ]
+}
